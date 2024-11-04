@@ -1,1 +1,1 @@
-# ambiente_GEOCE
+# Ambiente Virtual para visualização e interação com modelo digitais tridimencionais geológicos, com intuito de poossibilitar que informações antes limitadas pelo acesso estejam agora disponíveis virtualmente.
