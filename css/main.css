@@ -1,0 +1,126 @@
+body,
+html,
+#potree_container {
+	#lg_ufc {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    z-index: 100;
+  }
+  #lg_geoce {
+    position: absolute;
+    right: 85px;
+    top: 40px;
+    z-index: 100;
+  }
+  #lg_EU {
+    position: fixed;
+    right: 5px;
+    top: 10px;
+    z-index: 100;
+  }
+  #potree_loading {
+    position: absolute;
+    left: calc(50% - 50px);
+    top: calc(50% - 25px);
+    width: 100px;
+    text-align: center;
+    color: gray;
+    font-weight: 20px;
+    font-size: 50px;
+  }
+  #potree_toolbar{
+    width: 100%;
+    position: relative;
+    padding: 20px;
+    z-index: 100;
+    left: 750px;
+    top: 860px;
+    bottom: 100px;
+    font-weight: bold;
+    background: none;
+    color: white;
+    /* padding: 0.1em 0.8em; */
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+  }
+  /* .potree_toolbar_label{
+    position: relative;
+    top: 55px;
+    right: 170px;
+    text-align: center;
+    font-size: large;
+    opacity: 0.9;
+  } */
+  /* .potree_toolbar_separator{
+    position: absolute;
+    top: 60px;
+    right: 25px;
+    background: white;
+		padding: 2px;
+		margin: 2px 2px;
+		width: 350px;
+	} */
+  .p_collapsible {
+    background-color: var(--bg-dark-color);
+    z-index: 10000; 
+    position:	relative;
+    top: 103px;
+    left : 1472px;
+    display:	flex; 
+    flex-direction:	row, column;
+    color: white;
+    font-family: "system-ui";
+    cursor: pointer;
+    padding: 10px;
+    width: 206px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  .active, .p_collapsible:hover {
+    background-color: #555;
+  }
+  .p_content {
+    z-index: 10000; 
+    position: absolute;
+    top: 142px;
+    right : 242px;
+    padding: 15px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    font-family: "system-ui";
+    opacity: 0.8;
+    width: 176px;
+  }
+  .p_collapsible:after {
+  
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: left;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+  #progressBar {
+    width: 100%;
+    background-color: #f3f3f3;
+    position: fixed;
+    top: 700;
+    left: 700;
+    z-index: 1000;
+  }
+  
+  #progressBar .progress {
+    width: 0%;
+    height: 5px;
+    background-color: #4CAF50;
+    transition: width 0.3s;
+  }
+}
