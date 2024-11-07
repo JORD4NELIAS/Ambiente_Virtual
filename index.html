@@ -40,11 +40,12 @@
   <script src="./libs/shapefile/shapefile.js"></script>
   <script src="./build/potree/js/moveCamera.js"></script>
 
-  <div class="potree_container" style="position: absolute; width: 100%; height: 100%; left: 0px; top: 0px">
+  <div class="potree_container"
+    style="position: absolute; width: 100%; height: 100%; left: 0px; top: 0px;">
     <div id="potree_render_area">
-      <div id="cesiumContainer" style="position: absolute; width: 100%; height: 100%; background-color: black;"></div>
+      <div id="cesiumContainer" style="position: absolute; width: 100%; height: 100%; left: 0px; top: 0px;"></div>
     </div>
-
+  
     <!-- Logo UFC e Laboratorio -->
     <div id="lg_ufc">
       <a rel="https://www.ufc.br/" target="_blank" title="Portal_UFC">
@@ -53,13 +54,23 @@
     <div id="lg_geoce">
       <a rel="https://geoce.ufc.br/pt/" target="_blank" title="GEOCE">
         <img src="./Logo/lg_geoce.png" width="80" height="45" alt="GEOCE" /></a>
+      </div>
+
     </div>
-    <div id="potree_toolbar">
-      <div id="tools"></div>
+    <div id="potree_sidebar_container"></div>
+  </div>
+  <button type="button" class="p_collapsible">Nuvens de Pontos</div></button>
+  <div class="p_content">
+    <h3>Acervo de Nuvens de Pontos</h3>
+    <p>Selecione a nuvem de pontos desejada para visualização e interação.</p>
+    <div class="dropdown">
+      <a href="#" onclick="moveCameraTo([601078.646, 9538970.657, 114.963],
+            [599875.535, 9539223.424, -273.362])">Falésia Beberibe</a><br>
+      <a href="#" onclick="moveCameraTo([502765.684, 9452473.967, 259.521],
+            [502831.852, 9452027.069, 150.778])">Inselberg do Terreno</a><br>
     </div>
   </div>
-  <div id="potree_sidebar_container"></div>
-  </div>
+
   <script src="./build/potree/js/dropdown.js"></script>
   <script type="module">
     Cesium.Ion.defaultAccessToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI2YmM4NmNiZS1lMzA0LTQ2NjgtYmU3Ny1lZTFkZGFmNGJhYTEiLCJpZCI6MjM5MTg3LCJpYXQiOjE3MjU1NDYyNjF9.Er_-Vz154xXa-LRiFq9GLulWA12eEeaOBEap1VZvlaM";
@@ -115,7 +126,7 @@
 
     viewer.loadGUI(() => {
       viewer.setLanguage("pt");
-      $("#menu_scene").next().show();
+      // $("#menu_clipping").next().show();
       viewer.toggleSidebar();
     });
 
