@@ -1,0 +1,1 @@
+# Ambiente Virtual para visualização e interação com modelo digitais tridimencionais geológicos, com intuito de possibilitar que informações antes limitadas pelo acesso estejam agora disponíveis virtualmente.
